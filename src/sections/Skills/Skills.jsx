@@ -10,25 +10,19 @@ function Skills() {
 
   return (
     <section id="skills" className={styles.container}>
-      <h1 className="sectionTitle">Skills</h1>
-      <div className={styles.skillList}>
-        <SkillList src={checkMarkIcon} skill="HTML" />
-        <SkillList src={checkMarkIcon} skill="CSS" />
-        <SkillList src={checkMarkIcon} skill="JavaScript" />
-        <SkillList src={checkMarkIcon} skill="JAVA" />
-      </div>
-      <hr />
-      <div className={styles.skillList}>
-        <SkillList src={checkMarkIcon} skill="React" />
-        <SkillList src={checkMarkIcon} skill="SCSS" />
-        <SkillList src={checkMarkIcon} skill="Tailwind CSS" />
-      </div>
-      <hr />
-      <div className={styles.skillList}>
-        <SkillList src={checkMarkIcon} skill="Redux" />
-        <SkillList src={checkMarkIcon} skill="Git" />
-        <SkillList src={checkMarkIcon} skill="GenerativeAPI" />
-        <SkillList src={checkMarkIcon} skill="Bootstrap" />
+      <h1 className={styles.sectionTitle}>Skills</h1>
+      <div className={styles.skillGrid}>
+        <SkillList src={checkMarkIcon} skill="HTML" level={90} />
+        <SkillList src={checkMarkIcon} skill="CSS" level={80} />
+        <SkillList src={checkMarkIcon} skill="JavaScript" level={85} />
+        <SkillList src={checkMarkIcon} skill="JAVA" level={75} />
+        <SkillList src={checkMarkIcon} skill="React" level={80} />
+        <SkillList src={checkMarkIcon} skill="SCSS" level={70} />
+        <SkillList src={checkMarkIcon} skill="Tailwind CSS" level={75} />
+        <SkillList src={checkMarkIcon} skill="Redux" level={70} />
+        <SkillList src={checkMarkIcon} skill="Git" level={85} />
+        <SkillList src={checkMarkIcon} skill="GenerativeAPI" level={60} />
+        <SkillList src={checkMarkIcon} skill="Bootstrap" level={80} />
       </div>
     </section>
   );
